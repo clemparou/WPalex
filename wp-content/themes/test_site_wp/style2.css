@@ -1,0 +1,335 @@
+/*
+Theme Name: test_site_wp
+Theme URI: https:/----
+Author: me
+Author URI: https://word.org/
+Description: desc
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: test
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#legrandtout{
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+
+#menu{
+    position:fixed;
+    display:inline-block;
+    background-color: #42A5F5;
+    height:100vh;
+    width:15vw;
+    min-width: 160px;
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.50);
+    left : 0px;
+    top : 0px;
+      
+}
+
+#titre_menu{
+	margin-left: 10px;
+}
+
+#btn_maison, #btn_business, #btn_religion,#btn_tout:hover{
+    cursor : pointer;
+
+}
+
+#mosaic{
+    position:relative;
+    background-color: #fafafa;
+    display: grid;
+    grid-auto-rows: calc( 200px + ( 85vw - ( 5 * 267px) ) / 6 );
+    grid-template-columns: auto auto auto auto auto ;
+    min-height: 100vh;
+    max-width:85vw;
+    left:15vw;
+    justify-content: space-evenly;
+    
+}
+
+#menu div{
+    background-color: #0D47A1;
+    position: relative;
+    top:15vh;
+    margin-bottom : 20px;
+    height: 50px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.50);
+
+}
+
+.projets{
+    box-sizing: border-box;
+    position : relative; 
+    background-color: #fafafa;
+    display:inline-block;
+    min-width: 267px;
+    height: 200px;
+    margin-top: calc( ( 85vw - ( 5 * 267px) ) / 6 );
+    transition: transform 500ms;
+    perspective: 1000px;
+        
+}
+li{
+    list-style-type: none;
+}
+
+
+
+.logo{
+    position:relative;
+    float:right;
+    height:50px;
+    transition: transform 1s ease;
+}
+
+#menu div:hover .logo{
+    transform: translate(-20px,0px);   
+}
+
+.fleche{
+    position:relative;
+    float:right;
+    right:-60px;
+    height:50px;
+    transition: opacity 1s ease;
+    opacity:0;
+}
+
+#menu div:hover .fleche{
+    opacity:1;
+}
+
+.flipbox{
+    position: relative;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+        
+}
+
+.projets:hover .flipbox{
+    transform: rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    height:200px;
+    width:267px;
+    top:0px;
+    left:0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.front img{
+    height: 200px;
+    width:auto;
+    
+}
+
+.flipbox a{
+    height:200px;
+    width:267px;
+}
+
+.back{
+    position: absolute;
+    
+    height:200px;
+    width:267px;
+    top:0px;
+    left:0px;
+    background-color: #25722e;
+    transform: rotateY(180deg) translateZ(1px);
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 200px;
+    text-align: center;
+}
+
+.back a{
+    display:block;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+@media all and (max-width:1570px){
+    #mosaic{
+        grid-template-columns: auto auto auto auto ;
+        grid-auto-rows: calc( 200px + ( 85vw - ( 4 * 267px) ) / 5 );
+    }
+    .projets{
+    	margin-top: calc( ( 85vw - ( 4 * 267px) ) / 5 );
+    }
+}
+
+@media all and (max-width:1256px){
+    #mosaic{
+        grid-template-columns: auto auto auto ;
+        grid-auto-rows: calc( 200px + ( 85vw - ( 3 * 267px) ) / 4 );
+    }
+    .projets{
+    	margin-top: calc( ( 85vw - ( 3 * 267px) ) / 4 );
+    }
+}
+
+@media all and (max-width:1066px){
+    #mosaic{
+        grid-template-columns: auto auto auto ;
+        grid-auto-rows: calc( 200px + ( ( 100vw -160px ) - ( 3 * 267px) ) / 4 );
+        left : 160px;
+        width : calc(100vw - 177px);
+        max-width : 906px;
+        overflow-x: hidden;
+    }
+    .projets{
+    	margin-top: calc( ( ( 100vw -160px ) - ( 3 * 267px) ) / 4 );
+    }
+
+}
+
+@media all and (max-width:961px){
+    #mosaic{
+        grid-template-columns: auto auto ;
+        grid-auto-rows: calc( 200px + ( ( 100vw - 160px ) - ( 2 * 267px) ) / 3 );
+
+    }
+    .projets{
+    	margin-top: calc( ( ( 100vw - 160px ) - ( 2 * 267px) ) / 3 );
+    }
+}
+
+@media all and (max-width:694px){
+    #mosaic{
+        grid-template-columns: auto ;
+        grid-auto-rows: calc( 200px + ( ( 100vw - 160px ) - ( 1 * 267px) ) / 2 );
+    }
+    .projets{
+    	margin-top: calc( ( ( 100vw - 160px ) - ( 1 * 267px) ) / 2 );
+    }
+}
+
+/* CSS single.php*/
+
+#fleche_retour{
+	position:relative;
+	float:right;
+	height:50px;
+	transition: transform 1s ease;
+
+	-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+	}
+
+.post{
+	position:relative;
+	background-color: #fafafa;
+	height: 100vh;
+	max-width:85vw;
+	left:15vw;
+	
+    text-align: center;
+
+	}
+
+.post img{
+	
+	opacity: 0;
+	position : absolute;
+	float : left;
+	display : block;
+	width : 85vw;
+	height: 100vh;
+	margin-top : 50vh; 
+	margin-left : 42.5vw;
+    transform : translate(-50%,-50%);
+    object-fit: contain; 
+}
+
+.post-title{
+	text-align: center;
+}
+
+.post-content{
+	float : left;
+	//overflow: hidden;	
+}
+#texte{
+	position: absolute;
+	float : left;
+	background-color: rgba(255, 255, 255, 0.825);;
+	top : 0px;
+	margin-top: 50vh;
+	margin-left : 57.5vw;
+	transform : translate(-50%,-50%);
+	text-align: justify;
+	opacity : 0;
+	padding: 25px;
+	//border: 5px solid black;
+	border-radius: 5px;
+	//height: 90vh;
+	//width : 75vw;
+		
+}
+#texte p{
+	opacity : 1;
+	font-size: 120% ;
+}
+
+.post img:first-child{
+	opacity: 1;    
+}
+
+#menu_diaporama{	
+	position : absolute;
+	height : 50vh;
+	width : 50px;
+	top : 25vh;
+	right : 25px;
+	overflow: hidden;
+}
+
+#menu_diaporama img{
+	position : absolute;
+	height : 50px;
+	
+}
+#menu_diaporama img:hover{
+	cursor: pointer;
+}
+
+#fleche_gauche{
+	top : calc(66% - 34px) ;
+	
+}
+#paragraphe{
+	top : calc(33% - 17px);
+}
+#pdf{
+	top : calc(100% - 51px)
+	
+
+}
+
+

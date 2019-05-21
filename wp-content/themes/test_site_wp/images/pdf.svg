@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:60;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:60;stroke-miterlimit:10;}
+	.st3{stroke:#000000;stroke-width:60;stroke-miterlimit:10;}
+	.st4{fill:none;}
+	.st5{fill:#FFFFFF;}
+	.st6{font-family:'DejaVuSansMono-Bold';}
+	.st7{font-size:300px;}
+	.st8{letter-spacing:-21.8;}
+	.st9{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<font horiz-adv-x="2048">
+<!-- Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+DejaVu changes are in public domain
+ -->
+<!-- Copyright: Copyright 2018 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="DejaVuSansMono-Bold" units-per-em="2048" underline-position="-130" underline-thickness="90"/>
+<missing-glyph horiz-adv-x="1233" d="M104,-362l0,1806l1024,0l0,-1806M219,-248l795,0l0,1577l-795,0z"/>
+<glyph unicode="D" horiz-adv-x="1233" d="M432,1227l0,-961l80,0C628,266 711,303 760,376C809,449 834,573 834,748C834,922 809,1045 760,1118C711,1191 628,1227 512,1227M137,1493l316,0C697,1493 873,1435 980,1319C1087,1202 1141,1012 1141,748C1141,483 1087,293 980,176C873,59 697,0 453,0l-316,0z"/>
+<glyph unicode="F" horiz-adv-x="1233" d="M1112,1233l-635,0l0,-322l578,0l0,-260l-578,0l0,-651l-295,0l0,1493l930,0z"/>
+<glyph unicode="P" horiz-adv-x="1233" d="M457,1245l0,-438l121,0C675,807 743,823 782,856C821,889 840,945 840,1026C840,1107 821,1163 782,1196C743,1229 675,1245 578,1245M162,1493l405,0C773,1493 921,1456 1012,1383C1102,1310 1147,1191 1147,1026C1147,861 1102,742 1012,669C921,596 773,559 567,559l-110,0l0,-559l-295,0z"/>
+</font>
+
+	<g>
+	<rect class="st0" width="1024" height="1024"/>
+</g>
+<g id="Calque_3">
+	<rect x="162" y="162" class="st1" width="700" height="700"/>
+	<rect x="362" y="162" class="st2" width="300" height="240"/>
+	<rect x="530" y="222" class="st3" width="90" height="150"/>
+	<rect x="112" y="500" class="st4" width="800" height="400"/>
+	<text transform="matrix(1.3333 0 0 1 180.7695 728.001)" class="st5 st6 st7 st8">PDF</text>
+	<text transform="matrix(1.3333 0 0 1 180.7695 728.001)" class="st9 st6 st7 st8">PDF</text>
+	<rect x="997.1" y="555.2" class="st4" width="3.2" height="1.1"/>
+</g>
+</svg>
